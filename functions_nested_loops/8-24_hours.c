@@ -9,7 +9,7 @@
  *
  *
  *
- * Return: Returns the value of the last digit
+ * 
  *
  */
 
@@ -22,24 +22,56 @@ void jack_bauer(void)
 
 	while (a <= 2)
 	{
-		b = 0;
-		while (b <= 9)
-		{
-			c = 0;
-			while (c <= 5)
+		if (a < 2)
+		{	
+			b = 0;
+			while (b <= 9)
 			{
-				d = 0;
-				while (d <= 9)
+				c = 0;
+				while (c <= 5)
 				{
-					_putchar(a);
-					_putchar(b);
-					_putchar(':');
-					_putchar(c);
-					_putchar(d);
+					d = 0;
+					while (d <= 9)
+					{
+						_putchar(a + 48);
+						_putchar(b + 48);
+						_putchar(':');
+						_putchar(c + 48);
+						_putchar(d + 48);
+						_putchar('\n');
+						d++;
+					}
+					c++;
 				}
+				b++;
 			}
+		a++;
+		}
+		if (a == 2)
+                {
+                        b = 0;
+                        while (b <= 3)
+                        {
+                                c = 0;
+                                while (c <= 5)
+                                {
+                                        d = 0;
+                                        while (d <= 9)
+                                        {
+                                                _putchar(a + 48);
+                                                _putchar(b + 48);
+                                                _putchar(':');
+                                                _putchar(c + 48);
+                                                _putchar(d + 48);
+                                                _putchar('\n');
+                                                d++;
+                                        }
+                                        c++;
+                                }
+                                b++;
+                        }
+                a++;
 		}
 	}
-
 
 }
