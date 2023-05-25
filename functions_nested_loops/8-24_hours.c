@@ -21,7 +21,6 @@ void jack_bauer(void)
 
 	while (a <= 2)
 	{
-		if (a < 2)
 		{
 			b = 0;
 			while (b <= 9)
@@ -33,7 +32,7 @@ void jack_bauer(void)
 					while (d <= 9)
 					{
 						if (a == 2 && b > 3)
-							break
+							break;
 						_putchar(a + 48);
 						_putchar(b + 48);
 						_putchar(':');
