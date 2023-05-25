@@ -22,7 +22,7 @@ void times_table(void)
 		for (y = 0 ; y <= 9; y++)
 		{
 			prod = (x * y);
-			if (prod == 0)
+			if (y == 0)
 				;
 			else if (prod < 10)
 			{
