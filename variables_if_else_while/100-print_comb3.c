@@ -24,7 +24,7 @@ int main(void)
 				break;
 			putchar(',');
 			putchar(' ');
-		}		
+		}
 	}
 	putchar('\n');
 	return (0);
