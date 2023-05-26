@@ -2,7 +2,7 @@
 
 /**
  * main - entry point
- * 
+ *
  * Description: The write function is used instead of print or putchar or puts
  *
  * Return: 1
