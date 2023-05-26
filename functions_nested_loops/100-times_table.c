@@ -17,7 +17,7 @@ void print_times_table(int i)
 {
 	int x, y, prod;
 
-	if (i > 0 && i < 15)
+	if (i >= 0 && i < 15)
 	{
 		for (x = 0; x <= i; x++)
 		{
