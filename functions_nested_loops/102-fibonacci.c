@@ -20,7 +20,9 @@ int main(void)
 	printf("%ld, ", a);
 	for (i = 0; i < 49; i++)
 	{
-		printf("%ld, ", b);
+		printf("%ld", b);
+		if (i < 48)
+			printf(", ");
 		c = (a + b);
 		a = b;
 		b = c;
