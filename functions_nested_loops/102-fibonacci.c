@@ -12,14 +12,15 @@
 
 int main(void)
 {
-	int i, a, b, c;
+	int i;
+	long int a, b, c;
 
 	a = 1;
 	b = a + 1;
-	printf("%d, ", a);
+	printf("%ld, ", a);
 	for (i = 0; i < 49; i++)
 	{
-		printf("%d, ", b);
+		printf("%ld, ", b);
 		c = (a + b);
 		a = b;
 		b = c;
