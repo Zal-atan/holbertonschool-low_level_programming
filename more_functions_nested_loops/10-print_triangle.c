@@ -25,7 +25,7 @@ void print_triangle(int n)
 			if (j < k)
 				_putchar('#');
 			else
-				_putchat(' ');
+				_putchar(' ');
 		}
 		if (i < (n - 1))
 			_putchar('\n');
