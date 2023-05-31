@@ -5,13 +5,13 @@
 /* more headers goes there */
 
 /**
- * print_most_numbers - prints numbers 0 to 9, except 2 and 4
+ * more_numbers - prints numbers 0 to 14, x10
  *
  * Return: returns nothing
  *
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i, j;
 
