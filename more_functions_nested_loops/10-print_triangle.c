@@ -23,9 +23,9 @@ void print_triangle(int n)
 		for (j = 0; j < n; j++)
 		{
 			if (j < k)
-				_putchar('#');
-			else
 				_putchar(' ');
+			else
+				_putchar('#');
 		}
 		if (i < (n - 1))
 			_putchar('\n');
