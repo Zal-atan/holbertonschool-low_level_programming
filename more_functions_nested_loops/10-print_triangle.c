@@ -19,7 +19,7 @@ void print_triangle(int n)
 
 	for (i = 0; i < n; i++)
 	{
-		k = (n - i + 1);
+		k = (n - i - 1);
 		for (j = 0; j < n; j++)
 		{
 			if (j < k)
