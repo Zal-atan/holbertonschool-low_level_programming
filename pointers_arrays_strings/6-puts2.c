@@ -5,14 +5,14 @@
 /* more headers goes there */
 
 /**
- * _puts2 - Prints the length of the string, but only every other letter
+ * puts2 - Prints the length of the string, but only every other letter
  *
  * @str: string input
  *
  * Return: none
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i;
 
