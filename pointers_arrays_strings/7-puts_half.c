@@ -5,19 +5,19 @@
 /* more headers goes there */
 
 /**
- * puts2 - Prints the length of the string, but only every other letter
+ * puts_half - Prints the length of the string, but only every other letter
  *
  * @str: string input
  *
  * Return: none
  */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int i, j, k;
 
 	j = 0;
-	for (i = 0; s[i] != '\0' ; i++)
+	for (i = 0; str[i] != '\0' ; i++)
 		j++;
 	j = (j - 1);
 	if ((j % 2) == 0)
