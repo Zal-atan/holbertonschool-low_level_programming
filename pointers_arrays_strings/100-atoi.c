@@ -15,7 +15,7 @@
 int _atoi(char *str)
 {
 	int sign = 1;
-	long int num = 0;
+	unsigned int num = 0;
 
 	do
 	{
