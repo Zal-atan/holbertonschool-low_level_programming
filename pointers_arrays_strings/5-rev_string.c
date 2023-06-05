@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 #include "main.h"
+#include "2-strlen.c"
 /* more headers goes there */
 
 /**
@@ -14,19 +15,14 @@
 
 void rev_string(char *str)
 {
-	int i, j;
-	char temp[] = "";
+	int i;
+	char temp;
 
-	j = 0;
-	for (i = 0; str[i] != '\0' ; i++)
-		j++;
-
-	j = (j - 1);
-	i = 0;
-	for (; j >= 0; j--)
+	for (i = 0; i < _strlen(str) / 2; i++)
 	{
-		temp[i] = str[j];
-		i++;
+		temp = str[i];
+		str[i] = str[_strlen(str) - i - 1];
+		str[_strlen(str) - i - 1] = temp;
 	}
-	printf("%s", temp);
+
 }
