@@ -26,7 +26,7 @@ int _atoi(char *str)
 			num = (num * 10) + (*str - '0');
 
 		else if (num > 0)
-			break
+			break;
 	} while (*str++);
 
 
