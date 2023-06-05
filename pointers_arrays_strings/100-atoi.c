@@ -17,8 +17,7 @@ int _atoi(char *str)
 	int sign = 1;
 	unsigned int num = 0;
 
-	do
-	{
+	do {
 		if (*str == '-')
 			sign *= -1;
 
