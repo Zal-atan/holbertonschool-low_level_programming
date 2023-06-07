@@ -23,7 +23,7 @@ char *_strncpy(char *dest, char *src, int n)
 	while (src[len_src])
 		len_src++;
 
-	for (;src[index] && index < n; index++)
+	for (; src[index] && index < n; index++)
 	{
 		dest[index] = src[index];
 	}
@@ -32,4 +32,5 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[index] = '\0';
 
 	return (dest);
+
 }
