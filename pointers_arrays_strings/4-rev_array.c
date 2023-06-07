@@ -5,7 +5,7 @@
 /* more headers goes there */
 
 /**
- * reverse_array: Reverses an array of integers
+ * reverse_array - Reverses an array of integers
  *
  * @a: The array to be reversed
  *
