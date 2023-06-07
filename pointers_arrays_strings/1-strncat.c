@@ -11,6 +11,8 @@
  *
  * @src: string to copy
  *
+ * @n: number of 
+ *
  * Return: none
  */
 
