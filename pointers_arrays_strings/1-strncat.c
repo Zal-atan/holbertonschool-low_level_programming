@@ -11,7 +11,7 @@
  *
  * @src: string to copy
  *
- * @n: number of 
+ * @n: number of times to iterate through strin (src)
  *
  * Return: none
  */
