@@ -23,7 +23,7 @@ char *_strcat(char *dest, char *src)
 
 	while (*src)
 	{
-		dest[i_d++] = src[i_si++];
+		dest[i_d++] = src[i_s++];
 	}
 
 	return (dest);
