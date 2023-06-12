@@ -14,7 +14,7 @@
  * Return: Returns pointer to where first letter from accept appearcs in s
  */
 
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 
