@@ -5,7 +5,7 @@
 /* more headers goes there */
 
 /**
- * _strspn - returns pointer to first letter occuring from accept in string
+ * _strpbrk - returns pointer to first letter occuring from accept in string
  *
  * @s: string input
  *
