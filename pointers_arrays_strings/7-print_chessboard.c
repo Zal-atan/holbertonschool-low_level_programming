@@ -9,7 +9,7 @@
  *
  * @haystack: string to search in
  *
- * @needle: string to search for
+ * @string to search for
  *
  * Return: Returns pointer to where second str appears in str 1
  */
@@ -26,10 +26,10 @@ char *_strstr(char *haystack, char *needle)
 			if (haystack[i] == needle[j])
 			{
 				c = (haystack + i);
-				for (; needle[j] != '\0'; j++)
-					if (haystack[i + j] != needle[j])
+				for (; needle[j] != '\0'; j++, i++)
+					if (haystack[i] != needle[j])
 						k = 0;
-					else if (haystack[i + j] == needle[j])
+					else if (haystack[i] == needle[j])
 						k = 1;
 				if (k == 0)
 					break;
