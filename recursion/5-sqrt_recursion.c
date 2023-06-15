@@ -15,7 +15,7 @@
  *
  */
 
-int find_sqrt(int n, int i)
+int find_sqrt(int n, long int i)
 {
 	if (i == 1)
 		return (-1);
