@@ -12,10 +12,15 @@
  */
 
 
-int main(__attribute__ ((unused))int argc, char **argv)
+int main(int argc, char **argv)
 {
 	long int i, j;
 
+	if (argc < 3)
+	{
+		printf("Error\n");
+		return(0);
+	}
 	i = atoi(argv[1]);
 	j = atoi(argv[2]);
 	printf("%ld\n", (i * j));
