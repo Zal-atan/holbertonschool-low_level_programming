@@ -3,6 +3,10 @@
 /**
  * main - check the code
  *
+ * @argc - number of arguments given
+ *
+ * @argv - array of attributes given
+ *
  * Return: Always 0.
  *
  */
