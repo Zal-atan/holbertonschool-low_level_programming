@@ -14,11 +14,9 @@ char *_strdup(char *str)
 	char *ar;
 	int i = 0, len = strlen(str);
 
-	if (len == 0)
+	if (str == NULL)
 		return (NULL);
 	ar = malloc(sizeof(*ar) * len);
-	if (ar == NULL)
-		return (NULL);
 	while (i < len)
 	{
 		ar[i] = str[i];
