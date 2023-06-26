@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * string_nconcat - puts first n chars of string s2 at end of string s1
@@ -16,8 +18,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ar, *dump;
-	int i = 0, len1 = 0;
-	unsigned int j = 0, len2 = 0;
+	unsigned int j = 0, len2 = 0, i = 0, len1 = 0;
 
 	if (s1 != NULL)
 	{
@@ -35,7 +36,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			len2 = n;
 	}
 
-	ar = malloc(sizeof(*ar) * (len1 + n) + 1);
+	if (s2 == NULL)
+		return (NULL);
+
+	ar = malloc(sizeof(char) * (len1 + len2) + 1);
 
 	if (ar == NULL)
 		return (NULL);
