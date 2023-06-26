@@ -15,7 +15,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *ar;
+	char *ar, *dump;
 	int i = 0, len1 = 0;
 	unsigned int j = 0, len2 = 0;
 
@@ -45,6 +45,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (j = 0; j < len2; j++, i++)
 		ar[i] = s2[j];
+
+	dump = malloc(5);
+	free(dump);
 
 	return (ar);
 }
