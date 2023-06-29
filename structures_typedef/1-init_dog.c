@@ -3,7 +3,7 @@
 /**
  * init_dog - Function that initiates data structure "dog"
  *
- * @dog: address of previously initiated structure dog
+ * @d: address of previously initiated structure dog
  *
  * @name: name of dog to add to structure
  *
