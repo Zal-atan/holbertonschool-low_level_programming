@@ -7,6 +7,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct dog - structures containing characteristics of dog
+ * @name: name of the dog
+ * @age: age of the dog (in human years)
+ * @owner: name of the owner
+ * Description: Characteristics of dog
+ */
+
 struct dog
 {
 	char *name;
