@@ -15,4 +15,11 @@ void print_dog(struct dog *d)
 		printf("Age: %.6f\n", (*d).age);
 		printf("Owner: %s\n", (*d).owner);
 	}
+
+	else
+	{
+		printf("Name: (nil)");
+		printf("Age: 0.000000");
+		printf("Owner: (nil)");
+	}
 }
