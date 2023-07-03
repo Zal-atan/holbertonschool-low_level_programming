@@ -3,7 +3,7 @@
 /**
  * main - Main function entry
  *
- * @argc - number of arguments supplied
+ * @argc: number of arguments supplied
  *
  * @argv: input numbers in an array
  *
@@ -25,13 +25,13 @@ int main(int argc, char **argv)
 	num2 = atoi(argv[3]);
 	func = get_op_func(argv[2]);
 
-	if (func == NULL)
+	if (func == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((argv[2][0] == '%' || argv[2][0] == '/') && num2 == '0')
+	if ((argv[2][0] == '%' || argv[2][0] == '/') && argv[3][0] == '0')
 	{
 		printf("Error\n");
 		exit(100);
