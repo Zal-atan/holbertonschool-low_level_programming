@@ -1,0 +1,1 @@
+This is a readme for the singly_linked_lists directory. In this directory we will be working on learning singly linked lists.
