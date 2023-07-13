@@ -31,7 +31,7 @@ int _pow_recursion(int x, int y)
 /**
  * binary_to_uint - converts binary to decimal
  *
- * b: string of numbers
+ * @b: string of numbers
  *
  * Return: return an unsigned decimal based integer
  */
