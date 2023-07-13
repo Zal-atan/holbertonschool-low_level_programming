@@ -41,7 +41,7 @@ unsigned int binary_to_uint(const char *b)
 	int x = 2, sum = 0;
 	int i = (strlen(b) - 1);
 
-	if (!b || *b == NULL)
+	if (b == NULL)
 		return (0);
 
 	while (*b)
