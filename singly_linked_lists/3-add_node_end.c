@@ -29,12 +29,12 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (*head == NULL)
 		*head = addNewEnd;
-	
+
 	else
 	{
 		while (pos->next)
 			pos = ((*pos).next);
-		
+
 		(*pos).next = addNewEnd;
 	}
 
