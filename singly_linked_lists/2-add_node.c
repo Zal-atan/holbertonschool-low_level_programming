@@ -12,6 +12,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
+	int newLen;
 	list_t *addNew;
 
 	addNew = malloc(sizeof(list_t));
