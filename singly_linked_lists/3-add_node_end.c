@@ -35,7 +35,7 @@ list_t *add_node(list_t **head, const char *str)
 		while (pos->next)
 			pos = ((*pos).next)
 		
-		(*pos).next = end;
+		(*pos).next = addNewEnd;
 	}
 
 
