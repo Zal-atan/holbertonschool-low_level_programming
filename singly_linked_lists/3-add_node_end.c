@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - Adds new node to beggining of list
+ * add_node_end - Adds new node to end of list
  *
  * @head: current head of list
  *
@@ -10,7 +10,7 @@
  * Return: Returns the number of nodes
  */
 
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *addNewEnd;
 	list_t *pos = *head;
