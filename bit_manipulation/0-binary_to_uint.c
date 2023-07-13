@@ -30,10 +30,10 @@ int _pow_recursion(int x, int y)
 
 /**
  * binary_to_uint - converts binary to decimal
- * 
+ *
  * b - string of numbers
- * 
- * Return: return an unsigned decimal based integer 
+ *
+ * Return: return an unsigned decimal based integer
  */
 
 unsigned int binary_to_uint(const char *b)
@@ -41,8 +41,8 @@ unsigned int binary_to_uint(const char *b)
 	int x = 2, sum = 0;
 	int i = (strlen(b) - 1);
 
-	if (!b)
-		return(0);
+	if (!b || b == NULL)
+		return (0);
 
 	while (*b)
 	{
@@ -50,7 +50,7 @@ unsigned int binary_to_uint(const char *b)
 			sum += _pow_recursion(x, i);
 		else if (*b != '0')
 			return (0);
-		
+
 		b++, i--;
 	}
 
