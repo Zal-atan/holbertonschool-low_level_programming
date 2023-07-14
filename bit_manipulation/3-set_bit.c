@@ -2,7 +2,7 @@
 
 
 /**
- * get_bit - gets value of the bit at specific place
+ * set_bit - sets value of specific bit to 1
  *
  * @n: input number
  *
