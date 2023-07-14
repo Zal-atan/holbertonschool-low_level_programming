@@ -38,23 +38,32 @@ int _pow_recursion(int x, int y)
 
 void print_binary(unsigned long int n)
 {
+	if (n > 1)
+		print_binary(input >> 1);
+
+	_putchar((n & 1) + 48);
+}
+
+
+/* Below doesnt work for 64 bit */
+/*
+void print_binary(unsigned long int n)
+{
 	int i = 0;
-	unsigned int sum = 0;
+	unsigned long int sum = 0;
 	int num = n, temp;
 
 	if (n == 0)
-		_putchar('0'); /*In the case of n = 0*/
+		_putchar('0'); 
 
-	while (num > _pow_recursion(2,i)) /*Count how many digits needed*/
+	while (num > _pow_recursion(2,i)) 
 		{
 			i++;
 		}
 	
-	temp = i; /*temp will help with 0's on front*/
+	temp = i; 
 	for (; i >= 0; i--)
 	{
-		/*Print char by char, if a 1 doesnt take sum over value of n, print 1*/
-		/*Else, print 0, with exception, dont print 0 as first num*/
 		if (n >= sum + _pow_recursion(2,i)) 
 		{
 			_putchar('1');
@@ -69,3 +78,4 @@ void print_binary(unsigned long int n)
 		}
 	}
 }
+*/
