@@ -10,7 +10,7 @@
  * Return: Returns number of letter read and printed, or 0 if not equal
 */
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t len_read, len_write, openf;
 	char *buffer;
