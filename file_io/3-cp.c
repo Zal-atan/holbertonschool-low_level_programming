@@ -52,7 +52,7 @@ void test_file_out(ssize_t checker, char *name, int fd_from, int fd_to)
 {
 	if (checker == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", name);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", name);
 		if (fd_from != -1)
 			close(fd_from);
 		if (fd_to != -1)
