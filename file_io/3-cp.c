@@ -100,10 +100,10 @@ int main(int argc, char **argv)
 	file_from = argv[1], file_to = argv[2];
 
 	fd_from = open(file_from, O_RDONLY);
-	test_file_in((ssize_t)fd_from, fd_from, -1, -1);
+	test_file_in((ssize_t)fd_from, argv[1], -1, -1);
 
 	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	test_file_out((ssize_t)fd_to, fd_to, fd_from, -1);
+	test_file_out((ssize_t)fd_to, argv[2], fd_from, -1);
 
 	while (len_read == 1024)
 	{
