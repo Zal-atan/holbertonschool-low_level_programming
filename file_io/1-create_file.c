@@ -12,7 +12,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	ssize_t len_write, openf;
+	int openf;
 
 	if (filename == NULL)
 		return (-1);
