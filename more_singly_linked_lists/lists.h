@@ -17,13 +17,12 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
+ *
  */
-
 typedef struct listint_s
 {
-	char *str;
-	int n;
-	struct listint_s *next;
+    int n;
+    struct listint_s *next;
 } listint_t;
 
 /* Function Prototypes */
