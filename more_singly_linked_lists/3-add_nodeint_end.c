@@ -12,10 +12,10 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	list_t *addNewEnd;
-	list_t *pos = *head;
+	listint_t *addNewEnd;
+	listint_t *pos = *head;
 
-	addNewEnd = malloc(sizeof(list_t));
+	addNewEnd = malloc(sizeof(listint_t));
 
 	if (addNewEnd == NULL)
 	{
