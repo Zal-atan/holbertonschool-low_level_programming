@@ -5,7 +5,7 @@
  *
  * @head: current head of list
  *
- * @str: string to add to list
+ * @n: integer to add to the list
  *
  * Return: Returns the number of nodes
  */
