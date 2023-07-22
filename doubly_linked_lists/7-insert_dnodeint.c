@@ -3,7 +3,7 @@
 /**
  * insert_dnodeint_at_index - adds a node with value (n) at index (idx)
  *
- * @head: current head of list
+ * @h: current head of list
  *
  * @idx: position of node to add new node
  *
@@ -27,6 +27,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		(*addNew).next = temp;
 		*h = addNew;
+		*addNew.prev = NULL;
 		return (addNew);
 	}
 
